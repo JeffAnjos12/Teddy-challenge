@@ -76,6 +76,7 @@ function Header() {
     justifyContent: "center",
     alignItems: "center",
     padding: "10px",
+    gap:"50px",
     backgroundColor: "#fff",
     "@media (max-width: 768px)": {
       display: isMenuOpen ? "flex" : "none", // Mostrar menu apenas se isMenuOpen for true

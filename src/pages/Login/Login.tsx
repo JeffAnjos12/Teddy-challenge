@@ -1,6 +1,7 @@
-import { styled, Typography } from "@mui/material"
+import { styled } from "@mui/material"
+import { useNavigate } from "react-router-dom"
 
-function Home() {
+function Login() {
 
     const StyledBody = styled("div") (() => ({
         display: "flex",
@@ -45,17 +46,22 @@ function Home() {
         fontFamily: "Arial",
         color: "#333", 
     }))
-
+    
+    //Navegação entre páginas
+    const navigate = useNavigate();
+    const navigateToCostumers = () =>{
+        navigate("/costumers");
+    }
     return (
      <>
      <StyledBody>
         <Typography>Olá, seja bem-vindo!</Typography> 
         <StyledInput type="text" placeholder="Digite o seu nome" />
-        <StyledButton>Entrar</StyledButton>
+        <StyledButton onClick={navigateToCostumers}>Entrar</StyledButton>
      </StyledBody>
      </>
     )
   }
   
-  export default Home
+  export default Login
   

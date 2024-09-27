@@ -29,7 +29,7 @@ function Header() {
     display: "flex",
     alignItems: "center",
     justifyContent:"flex-end",
-    padding:"10px",
+    padding:"20px 0",
     "@media (max-width: 768px)": {
       display: "none", // Oculta o texto do usuário em telas pequenas
     },
@@ -42,6 +42,7 @@ function Header() {
     fontSize: "16px",
     color: "#000",
     transition: "0.25s",
+    padding:"16px",
     "&:hover": {
       color: "#EC6724",
     },
@@ -49,6 +50,10 @@ function Header() {
       color: "#EC6724",
       textDecoration: "underline",
     },
+        // O botão hamburger deve ser exibido apenas em telas pequenas
+        "@media (max-width: 768px)": {
+          display: "none", // Oculta o botão em telas maiores
+        },
   }));
 
   const StyledButton = styled("button")(() => ({

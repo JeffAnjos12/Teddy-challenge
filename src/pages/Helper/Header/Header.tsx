@@ -1,9 +1,10 @@
 import { Grid, styled } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Logo from "../../assets/Logo.svg";
+import Logo from "../../../assets/Logo.svg";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,7 +77,7 @@ function Header() {
     },
   }));
 
-  const MenuContainer = styled(Grid)(({ theme }) => ({
+  const MenuContainer = styled(Grid)(() => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

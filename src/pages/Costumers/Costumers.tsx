@@ -1,6 +1,6 @@
-import Header from "../Helper/Header";
+import Header from "../Helper/Header/Header";
 import { styled } from "@mui/material";
-import List from "../Helper/List";
+import List from "../Helper/List/List";
 
 
 function Costumers() {
